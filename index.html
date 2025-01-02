@@ -1,11 +1,273 @@
-<html><head>
-	<title>
-		deploying first website</title>
-	</head>
-	<body>
-	<h1>	Welcome to my first index page</h1>
-	<p>Namaste</p>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+ 
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="text-2xl font-bold">
+                <a href="#">MyPortfolio</a>
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="hover:text-indigo-500">About</a>
+                <a href="#projects" class="hover:text-indigo-500">Projects</a>
+                <a href="#services" class="hover:text-indigo-500">Services</a>
+                <a href="#contact" class="hover:text-indigo-500">Contact</a>
+            </div>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white py-4">
+            <div class="space-y-4 px-6">
+                <a href="#about" class="block hover:text-indigo-500">About</a>
+                <a href="#projects" class="block hover:text-indigo-500">Projects</a>
+                <a href="#services" class="block hover:text-indigo-500">Services</a>
+                <a href="#contact" class="block hover:text-indigo-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Section (for testing) -->
+    <!-- About Me Section -->
+    <section id="about" class="py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Heading -->
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Hello! I'm Laxman Neupane</h2>
+
+            <!-- Short Biography -->
+            <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+                Hello! I'm Laxman Neupane, a BTech student from Sunwal, Lumbini Province, Nepal. With a strong passion for web development and graphic design, I specialize in creating dynamic, user-friendly websites and crafting visually appealing designs.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+                I’m particularly skilled in frontend web development and have experience using tools like Figma to design intuitive user interfaces. As a fresher, I’m eager to expand my knowledge and apply my skills to real-world projects.
+            </p>
+            <p class="text-lg text-gray-600 mb-6 max-w-3xl mx-auto">
+                Feel free to get in touch with me via email at <a href="mailto:laxmanneupane007@gmail.com" class="text-indigo-600 hover:text-indigo-800">laxmanneupane007@gmail.com</a> or call me at <a href="tel:+9779846297148" class="text-indigo-600 hover:text-indigo-800">+977 9846297148</a>. I’d love to collaborate and help bring your ideas to life!
+            </p>
+
+            <!-- Photos Gallery -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+                <!-- Photo 1 -->
+                <div class="flex justify-center">
+                    <img src="1.png" alt="Photo 1" class="w-48 h-48 object-cover rounded-lg shadow-lg">
+                </div>
+                <!-- Photo 2 -->
+                <div class="flex justify-center">
+                    <img src="2.png" alt="Photo 2" class="w-48 h-48 object-cover rounded-lg shadow-lg">
+                </div>
+                <!-- Photo 3 -->
+                <div class="flex justify-center">
+                    <img src="3.png" alt="Photo 3" class="w-48 h-48 object-cover rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+       
+    </section>
+      <!-- Call to Action Button -->
+      <a href="#contact"  class="getintouch inline-block bg-indigo-600 text-white py-2 px-6 rounded-lg text-lg hover:bg-indigo-700 transition duration-300">
+        Get in Touch
+    </a>
+
+
+ <!-- Projects Section -->
+ <section id="projects" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center text-gray-800 mb-12">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        
+        <!-- Project 1: Radiant International Industries -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Radiant International Industries</h3>
+          <p class="text-gray-600 mb-6">A professional and polished introduction website for Radiant International Industries, designed to showcase industry leadership and services.</p>
+          <a href="index.html" target="_blank" class="inline-block px-6 py-3 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            View Project
+          </a>
+        </div>
+        
+        <!-- Project 2: Try Webpage -->
+        <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Try Webpage</h3>
+          <p class="text-gray-600 mb-6">A regular webpage showcasing a simple, clean design with functional elements and a responsive layout.</p>
+          <a href="try.html" target="_blank" class="inline-block px-6 py-3 bg-green-600 text-white text-lg rounded-lg shadow hover:bg-green-700 transition duration-300">
+            View Project
+          </a>
+        </div>
+
+      </div>
+    </div>
+    
+  </section>
+
+
+
+   <!-- Services Section -->
+   <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center text-gray-800 mb-12">My Services</h2>
+      
+      <!-- Frontend Web Development -->
+      <div class="mb-16">
+        <h3 class="text-3xl font-semibold text-gray-800 mb-6">Frontend Web Development</h3>
+        <p class="text-lg text-gray-600 mb-4">I specialize in creating dynamic, user-friendly websites that look great and perform seamlessly across all devices. My front-end development services include:</p>
+        
+        <ul class="list-disc pl-6 text-gray-600 space-y-3">
+          <li><strong>Custom Web Design:</strong> Crafting visually appealing and responsive websites tailored to your brand.</li>
+          <li><strong>HTML, CSS, and JavaScript Development:</strong> Writing clean, semantic code to bring your website to life.</li>
+          <li><strong>Responsive Design:</strong> Ensuring your website is fully optimized for mobile and tablet devices.</li>
+          <li><strong>UI/UX Design:</strong> Focusing on intuitive user interfaces and seamless user experiences to enhance usability.</li>
+          <li><strong>Website Optimization:</strong> Speeding up website load times and improving performance across various browsers.</li>
+        </ul>
+      </div>
+      
+      <!-- Graphic Design -->
+      <div>
+        <h3 class="text-3xl font-semibold text-gray-800 mb-6">Graphic Design</h3>
+        <p class="text-lg text-gray-600 mb-4">As a graphic designer, I bring creative concepts to life through eye-catching visual design. My graphic design services include:</p>
+        
+        <ul class="list-disc pl-6 text-gray-600 space-y-3">
+          <li><strong>Brand Identity Design:</strong> Creating unique logos, color schemes, and typography to establish a strong brand presence.</li>
+          <li><strong>Marketing Materials:</strong> Designing brochures, flyers, posters, and other print and digital materials.</li>
+          <li><strong>Social Media Graphics:</strong> Creating engaging visuals for social media platforms to boost your online presence.</li>
+          <li><strong>Website Graphics:</strong> Designing custom graphics, banners, icons, and other assets that enhance your website's design.</li>
+          <li><strong>Packaging Design:</strong> Designing attractive and functional packaging that reflects your brand.</li>
+        </ul>
+      </div>
+
+      <!-- Call to Action Section -->
+      <div class="mt-12 text-center">
+        <p class="text-lg text-gray-600 mb-4">Let's Bring Your Vision to Life</p>
+        <p class="text-gray-700 mb-6">Whether you need a sleek, responsive website or captivating graphics that tell your brand's story, I am here to help! Let’s collaborate to bring your ideas to life and make a lasting impression.</p>
+        <a href="contact.html" class="px-8 py-3 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-700 transition duration-300">
+          Contact Me for a Free Consultation
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+    
+
+ <!-- Contact Section -->
+ <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-semibold text-center text-gray-800 mb-12">Contact Me</h2>
+
+      <div class="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+        <p class="text-lg text-gray-600 mb-6">Feel free to reach out to me for inquiries, consultations, or just to say hello!</p>
+
+        <!-- Contact Details -->
+        <div class="space-y-6">
+          <!-- Email -->
+          <div class="flex items-center">
+            <span class="text-xl font-semibold text-gray-800 w-24">Email:</span>
+            <a href="mailto:laxmanneupane007@gmail.com" class="text-blue-600 hover:text-blue-800">
+              laxmanneupane007@gmail.com
+            </a>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="flex items-center">
+            <span class="text-xl font-semibold text-gray-800 w-24">Phone:</span>
+            <a href="tel:+9779846297148" class="text-blue-600 hover:text-blue-800">
+              +977 9846297148
+            </a>
+          </div>
+          
+
+          <!-- Social Media -->
+          <div class="flex items-center space-x-4">
+            <span class="text-xl font-semibold text-gray-800 w-24">Social:</span>
+            <a href="https://www.facebook.com/profile.php?id=61553671400506" target="_blank" class="text-blue-600 hover:text-blue-800">
+              Facebook
+            </a>
+            <a href="https://www.instagram.com/abhishek_neupane1/profilecard/?igsh=a3NqbWd3N2swbWsy" target="_blank" class="text-blue-600 hover:text-blue-800">
+              Instagram
+            </a>
+          </div>
+
+          <!-- Location -->
+          <div class="flex items-center">
+            <span class="text-xl font-semibold text-gray-800 w-24">Location:</span>
+            <span class="text-gray-600">Lumbini Province, Nepal</span>
+          </div>
+        </div>
+
+        <!-- Contact Form Button -->
+        <div class="mt-8 text-center">
+          <a href="mailto:laxmanneupane007@gmail.com" class="inline-block px-8 py-3 bg-blue-600 text-white text-lg rounded-lg shadow hover:bg-blue-700 transition duration-300">
+            Send Me a Message
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0">
+        <!-- Contact Information -->
+        <div class="text-center">
+          <p class="text-lg mb-2">Email: <a href="mailto:laxmanneupane007@gmail.com" class="text-blue-400 hover:text-blue-300">laxmanneupane007@gmail.com</a></p>
+          <p class="text-lg mb-2">Phone: <a href="tel:+9779846297148" class="text-blue-400 hover:text-blue-300">+977 9846297148</a></p>
+          <p class="text-lg">Location: Lumbini Province, Nepal</p>
+        </div>
+  
+        <!-- Social Media Links -->
+        <div class="flex space-x-6 justify-center">
+          <a href="https://www.facebook.com/profile.php?id=61553671400506" target="_blank" class="text-blue-400 hover:text-blue-300 text-xl">
+            <i class="fab fa-facebook"></i> <!-- If you use Font Awesome icons -->
+          </a>
+          <a href="https://www.instagram.com/abhishek_neupane1/profilecard/?igsh=a3NqbWd3N2swbWsy" target="_blank" class="text-blue-400 hover:text-blue-300 text-xl">
+            <i class="fab fa-instagram"></i> <!-- If you use Font Awesome icons -->
+          </a>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="mt-6 text-center">
+        <p class="text-sm">&copy; 2024 Laxman Neupane. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+    
+
+
+    <script>
+        // Toggle Mobile Menu
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
 </html>
-
-
